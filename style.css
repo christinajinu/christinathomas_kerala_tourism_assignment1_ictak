@@ -1,0 +1,264 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+
+    background-size : 100% 100vh;
+    background-position:center ;
+
+    background-repeat: no-repeat;
+    
+}
+header{
+    background-color:rgba(43, 198, 226, 0.664);
+    height: 4.5em;
+
+}
+img{
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.main-nav{
+    float: right;
+    display: inline;
+    margin-top: 20px;
+    margin-right: 5%;
+
+}
+/* navigation link */
+.main-nav a
+{
+    color:yellow;
+    text-decoration:none;
+    padding : 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight:100;
+
+}
+.main-nav a:hover
+{
+    color:red;
+    background-color:yellow;
+    transition:0.5s ease-in-out;
+    text-decoration:none;
+    
+}
+/* navigation link end */
+
+          /* search box */
+.searchbox
+
+{
+float: right;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-left: 1em;
+}
+button{
+border:1px solid dodgerblue;
+background-color: dodgerblue; 
+color:wheat
+}
+         /* search box end */
+         /* home page */
+.home h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:rgba(0, 0, 128, 0.945);
+text-align: center;
+
+padding-right: 30%;
+}
+.home h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    padding-left:40%;
+    color: yellow;
+}
+.home p{
+    font-family: cursive;
+    color:whitesmoke;
+    padding-left:40%;
+    font-size : 20px;
+    padding-top: 11%;
+
+}
+/* home page end */
+/* login background */
+.login{
+    background-size : 100% 100vh;
+    background-position:center ;
+}
+.loginbox{
+    width:320px;
+    height:420px;
+    background:rgb(29, 172, 157);
+    color:yellow;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:30px 30px;
+}
+.loginbox h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size:22px;
+    color:blue;
+}
+#email{
+    padding:5px;
+    margin-top :10px;
+    width:90%;
+    margin-bottom:20px;
+}
+#pass{
+    border:"2px" solid "white";
+     width:90%;
+    margin-bottom:20px;
+    padding:5px;
+    margin-top :10px;
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+}
+ #submit{
+    width:90%;
+    margin-bottom:20px;
+}
+/* .loginbox input[type="text"], input[type = "password"]
+{
+    border:none;
+    border-bottom: 1px solid white;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:white;
+    font-size:14px;
+} */
+/* .loginbox input[type="submit"] */
+#submit
+{
+    border:none;
+    outline:none;
+    height:40px;
+    background:blue;
+    color:white;
+    border-radius:20px;
+}
+/* .loginbox input[type="submit"]:hover */
+#submit:hover
+{
+    cursor:pointer;
+    background:palevioletred;
+    color:yellow;
+
+}
+.loginbox a{
+    text-decoration:none;
+    font-size:14px;
+    line-height:20px;
+    color:yellow;
+
+}
+.loginbox a:hover
+{
+    color:blue;
+}
+/* login end */
+
+/* signup starts */
+.signup{
+    background-size : 100% 100vh;
+    background-position:center ;
+}
+.signupform{
+    font-family: sans-serif;
+    width:330px; 
+    background:white;
+    box-shadow:0 0 3px 0 teal;
+    padding-bottom:150px;
+    margin:8% auto 0;
+    height:380px;
+    margin-top: 5px;
+    text-align: center;
+}
+.signupform h1{
+    color:teal;
+    margin-bottom: 30px;
+}
+.input-box 
+{
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom:20px 0;
+    width:90%;
+    border:1px solid #999;
+    outline:none;
+
+}
+#pwd{
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom:20px 0;
+    width:90%;
+    border:1px solid #999;
+    outline:none;
+    /* transition:all 0.3s; */
+}
+
+#cnpwd{
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom:20px 0;
+    width:90%;
+    border:1px solid #999;
+    outline:none;
+    /* transition:all 0.3s; */
+}
+#pwd:focus
+{
+    border-color:#27a360;
+    box-shadow: inset 0 0 4px #2fd072;
+}
+.strength{
+
+    transition:1s;
+    /* border:1px solid #212121; */
+    /* padding :8px 10px; */
+    padding:5px; 
+    font-size:15px;
+    font-weight:bold;
+    text-transform:uppercase;
+    width:80%;
+    height:15px;
+    border-radius:10px;
+    margin-left:30px;
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.signup-btn{
+    color:#fff;
+    width:80%;
+    padding:10px;
+    border-radius:20px;
+    font-size:15px;
+    margin:10px 0;
+    border:none;
+    outline:none;
+    cursor:pointer;
+
+}
+.signupform a{
+    text-decoration:none;
+    color:blue;
+}

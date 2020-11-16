@@ -1,0 +1,52 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      
+        <title>SignUp</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <a href="index.html"> <img src="./images/logo.jpg"></a>
+    <div class="signup">
+        <body background="./images/nature.jpg">
+        </div>
+    
+        <div class="signupform"> 
+            <br>
+        <h1><i>Sign Up Now</i></h1>
+          <br>
+          <!-- form validation -->
+          <form name="myform" action="index.html" onsubmit="return validate()" >
+         
+            <input type="text" class= "input-box" name="name" placeholder=" Your Name"> <br><br>
+            
+           
+            <input id= "email" type="text" class= "input-box" name="email" placeholder=" Your Email"> <br>
+            <label for="error" id="error"></label> 
+            
+            <input type="text" class= "input-box" placeholder=" Your Phone number" id= "mobile">
+         <br><br>
+         <label id="mobileph" style="color: red; visibility: hidden">Invalid</label><br>
+         
+         <input  id="pwd" autocomplete="none" type="text" name="pwd" placeholder=" Your Password" maxlength="20" value=""> <br><br>
+        <span id="message" style="color:red;"></span><br>
+        <input  id="cnpwd" autocomplete="none" type="text" name="pwd" placeholder=" Confirm Password" maxlength="20" value=""> <br><br>
+        <span id="cnmessage"></span>
+        <p class="strength" id="length"></p>
+         
+         <p><span><input type="checkbox"></span> I agree to the terms of services</p><br>
+          
+            <button id="submit">Sign up</button>
+    
+            <p>Do you have an account?<a href="login.html">Log In</a></p>
+        </form>
+    
+
+            </div>
+       <script src="form1.js"></script> 
+      
+
+    </body>
+    </html>
+</html>
