@@ -50,7 +50,10 @@ if(regx.test(mobile.value))
 //   if(pwd==""){
 //   alert("Please enter the password");
 //  return false;
-//  }
+//  
+
+
+
 var a= pwd.value;
 var b=cnpwd.value;
 if (a=="")
@@ -58,14 +61,14 @@ if (a=="")
     document.getElementById("message").innerHTML="**Please enter the Password";
     return false;
 }
-if (a.length<5)
+if (a.length<8)
 {
-    document.getElementById("message").innerHTML="**Password length must be greater than 5 characters";
+    document.getElementById("message").innerHTML="**Password length must be greater than 8 characters";
     return false;
 }
-if (a.length>20)
+if (a.length>15)
 {
-    document.getElementById("message").innerHTML="**Password length must be smaller than 20 characters";
+    document.getElementById("message").innerHTML="**Password length must be smaller than 15 characters";
     return false;
 }
 
@@ -92,11 +95,11 @@ function strength(){
 if(val!="")
 {
 
-    if(val.length<=5)
+    if(val.length<8)
     counter=1;
-    if(val.length > 5 && val.length <= 10)
+    if(val.length >= 8 && val.length <= 10)
     counter=2;
-    if(val.length > 10 && val.length <= 20)
+    if(val.length > 10 && val.length <= 15)
     counter=3;
 if(counter==1)
 {

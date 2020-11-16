@@ -29,9 +29,9 @@
          <br><br>
          <label id="mobileph" style="color: red; visibility: hidden">Invalid</label><br>
          
-         <input  id="pwd" autocomplete="none" type="text" name="pwd" placeholder=" Your Password" maxlength="20" value=""> <br><br>
+         <input  id="pwd" autocomplete="none" type="text" name="pwd" placeholder=" Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="15" value=""title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> <br><br>
         <span id="message" style="color:red;"></span><br>
-        <input  id="cnpwd" autocomplete="none" type="text" name="pwd" placeholder=" Confirm Password" maxlength="20" value=""> <br><br>
+        <input  id="cnpwd" autocomplete="none" type="text" name="pwd" placeholder=" Confirm Password" maxlength="15" value=""> <br><br>
         <span id="cnmessage"></span>
         <p class="strength" id="length"></p>
          
